@@ -1,0 +1,11 @@
+filebeat.prospectors:
+- input_type: log
+  paths:
+  - /Users/ruflin/Dev/gopath/src/github.com/elastic/beats/filebeat/module/nginx/access/access.log
+  fields:
+    source_type: nginx-access
+    pipeline: nginx-access
+
+output.elasticsearch:
+  hosts: ["localhost:9200"]
+  pipeline: "%{[fields.pipeline]}"

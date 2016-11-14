@@ -1,0 +1,19 @@
+{
+  "description": "Pipeline for parsing the Nginx error logs",
+  "processors": [
+    {
+      "grok": {
+        "field": "message",
+        "patterns": [
+          "%{DATA:time} \\[%{DATA:level}\\] %{NUMBER:pid}#%{NUMBER:tid}: (\\*%{NUMBER:connection_id} )?%{GREEDYDATA:message}"
+        ]
+      }
+    },
+    {
+      "rename": {
+        "field": "time",
+        "target_field": "@timestamp"
+      }
+    }
+  ]
+}

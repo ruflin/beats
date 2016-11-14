@@ -1,0 +1,2 @@
+2016/11/11 08:29:52 [error] 5#5: *2 open() "/usr/share/nginx/html/werwe" failed (2: No such file or directory), client: 172.17.0.1, server: localhost, request: "GET /werwe HTTP/1.1", host: "localhost:8080"
+2016/11/11 08:30:07 [error] 5#5: *2 open() "/usr/share/nginx/html/hello-world" failed (2: No such file or directory), client: 172.17.0.1, server: localhost, request: "GET /hello-world HTTP/1.1", host: "localhost:8080"
