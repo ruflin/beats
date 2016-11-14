@@ -4,3 +4,5 @@
 * Should multiple processors be loaded for each dataset
 * Geoip processor shipped by default?
 * Message line should only be removed when successful -> error pipeline needed -> error should not block ingest
+* Should we "rename" metricset in metricbeat to dataset to consistency?
+* Each data set has an additional type to specify if it was json, default, ...
