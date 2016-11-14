@@ -2,6 +2,9 @@ filebeat.prospectors:
 - input_type: log
   paths:
   - /Users/ruflin/Dev/gopath/src/github.com/elastic/beats/filebeat/module/nginx/access/access.log
+  # /var/log/nginx
+  # /usr/local/var/log/ngnix
+  # c:/programfiles/nginx/logs
   fields:
     source_type: nginx-access
     pipeline: nginx.access
@@ -12,4 +15,5 @@ filebeat.prospectors:
 
 output.elasticsearch:
   hosts: ["localhost:9200"]
-  pipeline: "%{[fields.pipeline]}"
+  pipelines:
+   - pipeline: "%{[fields.pipeline]}"

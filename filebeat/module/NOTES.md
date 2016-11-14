@@ -6,3 +6,6 @@
 * Message line should only be removed when successful -> error pipeline needed -> error should not block ingest
 * Should we "rename" metricset in metricbeat to dataset to consistency?
 * Each data set has an additional type to specify if it was json, default, ...
+* Should we use pipeline versioning?
+* Should JSON processing happen on filebeat or elasticsearch side? -> filebeat side has filtering advantage
+* Where should we add the dataset fields? Config file, ingest pipeline, code?
