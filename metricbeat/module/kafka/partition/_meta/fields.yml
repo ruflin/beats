@@ -16,14 +16,47 @@
           type: long
           description: >
             Oldest offset of the partition.
+        - name: error
+          type: long
+          description: >
+            Error code from fetching offset.
+
     - name: partition
+      type: group
+      description: >
+        Partition data.
+      fields:
+        - name: id
+          type: long
+          description: >
+            Partition id.
+
+        - name: leader
+          type: long
+          description: >
+            Leader id.
+        - name: error
+          type: long
+          description: >
+            Error code from fetching partition.
+        - name: isr
+          type: list
+          description: >
+            List of isr ids.
+        - name: replicas
+          type: list
+          description: >
+            List of replica ids.
+
+    - name: topic.error
       type: long
       description: >
-        Partition id.
-    - name: topic
+        topic error.
+    - name: topic.name
       type: keyword
       description: >
         Topic name
+
     - name: broker.id
       type: long
       description: >
@@ -32,3 +65,5 @@
       type: keyword
       description: >
         Broker address
+
+

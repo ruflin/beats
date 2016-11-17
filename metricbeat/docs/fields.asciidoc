@@ -1936,7 +1936,22 @@ Oldest offset of the partition.
 
 
 [float]
-=== kafka.partition.partition
+=== kafka.partition.offset.error
+
+type: long
+
+Error code from fetching offset.
+
+
+[float]
+== partition Fields
+
+Partition data.
+
+
+
+[float]
+=== kafka.partition.partition.id
 
 type: long
 
@@ -1944,7 +1959,47 @@ Partition id.
 
 
 [float]
-=== kafka.partition.topic
+=== kafka.partition.partition.leader
+
+type: long
+
+Leader id.
+
+
+[float]
+=== kafka.partition.partition.error
+
+type: long
+
+Error code from fetching partition.
+
+
+[float]
+=== kafka.partition.partition.isr
+
+type: list
+
+List of isr ids.
+
+
+[float]
+=== kafka.partition.partition.replicas
+
+type: list
+
+List of replica ids.
+
+
+[float]
+=== kafka.partition.topic.error
+
+type: long
+
+topic error.
+
+
+[float]
+=== kafka.partition.topic.name
 
 type: keyword
 

@@ -814,6 +814,9 @@
                 },
                 "offset": {
                   "properties": {
+                    "error": {
+                      "type": "long"
+                    },
                     "newest": {
                       "type": "long"
                     },
@@ -823,12 +826,29 @@
                   }
                 },
                 "partition": {
-                  "type": "long"
+                  "properties": {
+                    "error": {
+                      "type": "long"
+                    },
+                    "id": {
+                      "type": "long"
+                    },
+                    "leader": {
+                      "type": "long"
+                    }
+                  }
                 },
                 "topic": {
-                  "ignore_above": 1024,
-                  "index": "not_analyzed",
-                  "type": "string"
+                  "properties": {
+                    "error": {
+                      "type": "long"
+                    },
+                    "name": {
+                      "ignore_above": 1024,
+                      "index": "not_analyzed",
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }

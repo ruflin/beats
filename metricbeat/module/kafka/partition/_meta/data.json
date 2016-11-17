@@ -4,17 +4,28 @@
         "partition": {
             "broker": {
                 "address": "kafka:9092",
-                "id": 0
+                "id": -1
             },
             "offset": {
-                "newest": 13,
+                "error": 0,
+                "newest": 768,
                 "oldest": 0
             },
-            "partition": 0,
-            "replicas": [
-                0
-            ],
-            "topic": "testtopic"
+            "partition": {
+                "error": 0,
+                "id": 0,
+                "isr": [
+                    0
+                ],
+                "leader": 0,
+                "replicas": [
+                    0
+                ]
+            },
+            "topic": {
+                "error": 0,
+                "name": "testtopic"
+            }
         }
     },
     "metricset": {
