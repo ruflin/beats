@@ -1,1 +1,38 @@
 #Create fields.yml -> generate template out of it
+defaults:
+  type: keyword
+  required: false
+  index: true
+  doc_values: true
+  ignore_above: 1024
+
+fields:
+- key: nginx
+  title: Nginx log fields
+  description: >
+    Nginx log fields
+  fields:
+    - name: nginx
+      description: >
+      type: group
+      fields:
+        - name: access
+          description:
+          type: group
+          fields:
+            - name: request
+              type: keyword
+            - name: referrer
+              type: text
+            - name: request_action
+              type: keyword
+            - name: remote_ip
+              type: ip
+            - name: user_name
+              type: text
+            - name: response
+              type: integer
+            - name: bytes
+              type: long
+            - name: http_version
+              type: keyword
