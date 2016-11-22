@@ -13,3 +13,4 @@
 * Ingest makes indexing slower -> post processing with reindex for slower parts (geoip)?
 * All events will be written to the index they are sent to not where they belong based on the timestamp
 * @timestamp crashes pipeline because of @ symbol
+* Each module should have its own meta folder with templates, kibana dashboard etc
