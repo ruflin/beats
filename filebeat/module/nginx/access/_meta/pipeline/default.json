@@ -4,7 +4,7 @@
     "grok": {
       "field": "message",
       "patterns":[
-        "%{IPORHOST:nginx.access.remote_ip} - %{DATA:nginx.access.user_name} \\[%{HTTPDATE:nginx.access.time}\\] \"%{WORD:nginx.access.request_action} %{DATA:nginx.access.request} HTTP/%{NUMBER:nginx.access.http_version}\" %{NUMBER:nginx.access.response} %{NUMBER:nginx.access.bytes} \"%{DATA:nginx.access.referrer}\" \"%{DATA:nginx.access.agent}\""
+        "%{IPORHOST:nginx.access.remote_ip} - %{DATA:nginx.access.user_name} \\[%{HTTPDATE:@timestamp}\\] \"%{WORD:nginx.access.request_action} %{DATA:nginx.access.request} HTTP/%{NUMBER:nginx.access.http_version}\" %{NUMBER:nginx.access.response} %{NUMBER:nginx.access.bytes} \"%{DATA:nginx.access.referrer}\" \"%{DATA:nginx.access.agent}\""
         ],
       "ignore_missing": true
     }
@@ -14,15 +14,16 @@
     }
   }, {
     "user_agent": {
-      "field": "agent"
+      "field": "nginx.access.agent",
+      "target_field": "meta.user_agent"
     }
   }, {
     "remove": {
-      "field": "agent"
+      "field": "nginx.access.agent"
     }
   }, {
     "geoip": {
-      "field": "remote_ip"
+      "field": "nginx.access.remote_ip"
     }
   }]
 }

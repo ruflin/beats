@@ -9,3 +9,7 @@
 * Should we use pipeline versioning?
 * Should JSON processing happen on filebeat or elasticsearch side? -> filebeat side has filtering advantage
 * Where should we add the dataset fields? Config file, ingest pipeline, code?
+* What should be the target for `user_agent`? As it is a common one it could be on the top level. Or better have it under `nginx` or `meta`?
+* Ingest makes indexing slower -> post processing with reindex for slower parts (geoip)?
+* All events will be written to the index they are sent to not where they belong based on the timestamp
+* @timestamp crashes pipeline because of @ symbol
