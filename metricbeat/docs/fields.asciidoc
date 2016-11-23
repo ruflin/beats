@@ -1963,15 +1963,7 @@ Partition id.
 
 type: long
 
-Leader id.
-
-
-[float]
-=== kafka.partition.partition.error
-
-type: long
-
-Error code from fetching partition.
+Leader id (broker).
 
 
 [float]
@@ -1983,11 +1975,27 @@ List of isr ids.
 
 
 [float]
-=== kafka.partition.partition.replicas
+=== kafka.partition.partition.replica
 
-type: list
+type: long
 
-List of replica ids.
+Replica id (broker).
+
+
+[float]
+=== kafka.partition.partition.insync_replica
+
+type: boolean
+
+Indicates if replica is included in the in-sync replicate set (ISR).
+
+
+[float]
+=== kafka.partition.partition.error
+
+type: long
+
+Error code from fetching partition.
 
 
 [float]

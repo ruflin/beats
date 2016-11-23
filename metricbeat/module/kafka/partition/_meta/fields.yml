@@ -34,19 +34,25 @@
         - name: leader
           type: long
           description: >
-            Leader id.
-        - name: error
-          type: long
-          description: >
-            Error code from fetching partition.
+            Leader id (broker).
         - name: isr
           type: list
           description: >
             List of isr ids.
-        - name: replicas
-          type: list
+        - name: replica
+          type: long
           description: >
-            List of replica ids.
+            Replica id (broker).
+
+        - name: insync_replica
+          type: boolean
+          description: >
+            Indicates if replica is included in the in-sync replicate set (ISR).
+
+        - name: error
+          type: long
+          description: >
+            Error code from fetching partition.
 
     - name: topic.error
       type: long

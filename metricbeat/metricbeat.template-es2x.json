@@ -833,7 +833,13 @@
                     "id": {
                       "type": "long"
                     },
+                    "insync_replica": {
+                      "type": "boolean"
+                    },
                     "leader": {
+                      "type": "long"
+                    },
+                    "replica": {
                       "type": "long"
                     }
                   }
