@@ -1,0 +1,1327 @@
+{
+    "@timestamp": "2016-05-23T08:05:34.853Z",
+    "beat": {
+        "hostname": "host.example.com",
+        "name": "host.example.com"
+    },
+    "metricset": {
+        "host": "127.0.0.1:9090",
+        "module": "prometheus",
+        "name": "collector",
+        "rtt": 115
+    },
+    "prometheus": {
+        "collector": {
+            "go_gc_duration_seconds_count": {
+                "key": "go_gc_duration_seconds_count",
+                "value": 327
+            },
+            "go_gc_duration_seconds_sum": {
+                "key": "go_gc_duration_seconds_sum",
+                "value": 0.237591146
+            },
+            "go_gc_duration_seconds{quantile=0.25}": {
+                "key": "go_gc_duration_seconds",
+                "quantile": 0.25,
+                "value": 0.000184374
+            },
+            "go_gc_duration_seconds{quantile=0.5}": {
+                "key": "go_gc_duration_seconds",
+                "quantile": 0.5,
+                "value": 0.00043790200000000005
+            },
+            "go_gc_duration_seconds{quantile=0.75}": {
+                "key": "go_gc_duration_seconds",
+                "quantile": 0.75,
+                "value": 0.0006907300000000001
+            },
+            "go_gc_duration_seconds{quantile=0}": {
+                "key": "go_gc_duration_seconds",
+                "quantile": 0,
+                "value": 9.063800000000001e-05
+            },
+            "go_gc_duration_seconds{quantile=1}": {
+                "key": "go_gc_duration_seconds",
+                "quantile": 1,
+                "value": 0.004537414
+            },
+            "go_goroutines": {
+                "key": "go_goroutines",
+                "value": 134
+            },
+            "go_memstats_alloc_bytes": {
+                "key": "go_memstats_alloc_bytes",
+                "value": 4.0212536e+07
+            },
+            "go_memstats_alloc_bytes_total": {
+                "key": "go_memstats_alloc_bytes_total",
+                "value": 4.718856144e+09
+            },
+            "go_memstats_buck_hash_sys_bytes": {
+                "key": "go_memstats_buck_hash_sys_bytes",
+                "value": 1.548814e+06
+            },
+            "go_memstats_frees_total": {
+                "key": "go_memstats_frees_total",
+                "value": 3.1619537e+07
+            },
+            "go_memstats_gc_sys_bytes": {
+                "key": "go_memstats_gc_sys_bytes",
+                "value": 2.000896e+06
+            },
+            "go_memstats_heap_alloc_bytes": {
+                "key": "go_memstats_heap_alloc_bytes",
+                "value": 4.0212536e+07
+            },
+            "go_memstats_heap_idle_bytes": {
+                "key": "go_memstats_heap_idle_bytes",
+                "value": 1.1247616e+07
+            },
+            "go_memstats_heap_inuse_bytes": {
+                "key": "go_memstats_heap_inuse_bytes",
+                "value": 4.3343872e+07
+            },
+            "go_memstats_heap_objects": {
+                "key": "go_memstats_heap_objects",
+                "value": 83846
+            },
+            "go_memstats_heap_released_bytes_total": {
+                "key": "go_memstats_heap_released_bytes_total",
+                "value": 0
+            },
+            "go_memstats_heap_sys_bytes": {
+                "key": "go_memstats_heap_sys_bytes",
+                "value": 5.4591488e+07
+            },
+            "go_memstats_last_gc_time_seconds": {
+                "key": "go_memstats_last_gc_time_seconds",
+                "value": 1.4818641008500242e+09
+            },
+            "go_memstats_lookups_total": {
+                "key": "go_memstats_lookups_total",
+                "value": 72382
+            },
+            "go_memstats_mallocs_total": {
+                "key": "go_memstats_mallocs_total",
+                "value": 3.1703383e+07
+            },
+            "go_memstats_mcache_inuse_bytes": {
+                "key": "go_memstats_mcache_inuse_bytes",
+                "value": 2400
+            },
+            "go_memstats_mcache_sys_bytes": {
+                "key": "go_memstats_mcache_sys_bytes",
+                "value": 16384
+            },
+            "go_memstats_mspan_inuse_bytes": {
+                "key": "go_memstats_mspan_inuse_bytes",
+                "value": 439360
+            },
+            "go_memstats_mspan_sys_bytes": {
+                "key": "go_memstats_mspan_sys_bytes",
+                "value": 475136
+            },
+            "go_memstats_next_gc_bytes": {
+                "key": "go_memstats_next_gc_bytes",
+                "value": 6.9225873e+07
+            },
+            "go_memstats_other_sys_bytes": {
+                "key": "go_memstats_other_sys_bytes",
+                "value": 798442
+            },
+            "go_memstats_stack_inuse_bytes": {
+                "key": "go_memstats_stack_inuse_bytes",
+                "value": 2.031616e+06
+            },
+            "go_memstats_stack_sys_bytes": {
+                "key": "go_memstats_stack_sys_bytes",
+                "value": 2.031616e+06
+            },
+            "go_memstats_sys_bytes": {
+                "key": "go_memstats_sys_bytes",
+                "value": 6.1462776e+07
+            },
+            "http_request_duration_microseconds_count{handler=alerts}": {
+                "handler": "alerts",
+                "key": "http_request_duration_microseconds_count",
+                "value": 0
+            },
+            "http_request_duration_microseconds_count{handler=config}": {
+                "handler": "config",
+                "key": "http_request_duration_microseconds_count",
+                "value": 0
+            },
+            "http_request_duration_microseconds_count{handler=consoles}": {
+                "handler": "consoles",
+                "key": "http_request_duration_microseconds_count",
+                "value": 0
+            },
+            "http_request_duration_microseconds_count{handler=drop_series}": {
+                "handler": "drop_series",
+                "key": "http_request_duration_microseconds_count",
+                "value": 0
+            },
+            "http_request_duration_microseconds_count{handler=federate}": {
+                "handler": "federate",
+                "key": "http_request_duration_microseconds_count",
+                "value": 0
+            },
+            "http_request_duration_microseconds_count{handler=flags}": {
+                "handler": "flags",
+                "key": "http_request_duration_microseconds_count",
+                "value": 0
+            },
+            "http_request_duration_microseconds_count{handler=graph}": {
+                "handler": "graph",
+                "key": "http_request_duration_microseconds_count",
+                "value": 4
+            },
+            "http_request_duration_microseconds_count{handler=heap}": {
+                "handler": "heap",
+                "key": "http_request_duration_microseconds_count",
+                "value": 0
+            },
+            "http_request_duration_microseconds_count{handler=label_values}": {
+                "handler": "label_values",
+                "key": "http_request_duration_microseconds_count",
+                "value": 4
+            },
+            "http_request_duration_microseconds_count{handler=options}": {
+                "handler": "options",
+                "key": "http_request_duration_microseconds_count",
+                "value": 0
+            },
+            "http_request_duration_microseconds_count{handler=prometheus}": {
+                "handler": "prometheus",
+                "key": "http_request_duration_microseconds_count",
+                "value": 2557
+            },
+            "http_request_duration_microseconds_count{handler=query_range}": {
+                "handler": "query_range",
+                "key": "http_request_duration_microseconds_count",
+                "value": 0
+            },
+            "http_request_duration_microseconds_count{handler=query}": {
+                "handler": "query",
+                "key": "http_request_duration_microseconds_count",
+                "value": 0
+            },
+            "http_request_duration_microseconds_count{handler=rules}": {
+                "handler": "rules",
+                "key": "http_request_duration_microseconds_count",
+                "value": 0
+            },
+            "http_request_duration_microseconds_count{handler=series}": {
+                "handler": "series",
+                "key": "http_request_duration_microseconds_count",
+                "value": 0
+            },
+            "http_request_duration_microseconds_count{handler=static}": {
+                "handler": "static",
+                "key": "http_request_duration_microseconds_count",
+                "value": 4
+            },
+            "http_request_duration_microseconds_count{handler=status}": {
+                "handler": "status",
+                "key": "http_request_duration_microseconds_count",
+                "value": 0
+            },
+            "http_request_duration_microseconds_count{handler=targets}": {
+                "handler": "targets",
+                "key": "http_request_duration_microseconds_count",
+                "value": 0
+            },
+            "http_request_duration_microseconds_count{handler=version}": {
+                "handler": "version",
+                "key": "http_request_duration_microseconds_count",
+                "value": 0
+            },
+            "http_request_duration_microseconds_sum{handler=alerts}": {
+                "handler": "alerts",
+                "key": "http_request_duration_microseconds_sum",
+                "value": 0
+            },
+            "http_request_duration_microseconds_sum{handler=config}": {
+                "handler": "config",
+                "key": "http_request_duration_microseconds_sum",
+                "value": 0
+            },
+            "http_request_duration_microseconds_sum{handler=consoles}": {
+                "handler": "consoles",
+                "key": "http_request_duration_microseconds_sum",
+                "value": 0
+            },
+            "http_request_duration_microseconds_sum{handler=drop_series}": {
+                "handler": "drop_series",
+                "key": "http_request_duration_microseconds_sum",
+                "value": 0
+            },
+            "http_request_duration_microseconds_sum{handler=federate}": {
+                "handler": "federate",
+                "key": "http_request_duration_microseconds_sum",
+                "value": 0
+            },
+            "http_request_duration_microseconds_sum{handler=flags}": {
+                "handler": "flags",
+                "key": "http_request_duration_microseconds_sum",
+                "value": 0
+            },
+            "http_request_duration_microseconds_sum{handler=graph}": {
+                "handler": "graph",
+                "key": "http_request_duration_microseconds_sum",
+                "value": 13633.141
+            },
+            "http_request_duration_microseconds_sum{handler=heap}": {
+                "handler": "heap",
+                "key": "http_request_duration_microseconds_sum",
+                "value": 0
+            },
+            "http_request_duration_microseconds_sum{handler=label_values}": {
+                "handler": "label_values",
+                "key": "http_request_duration_microseconds_sum",
+                "value": 5101.014999999999
+            },
+            "http_request_duration_microseconds_sum{handler=options}": {
+                "handler": "options",
+                "key": "http_request_duration_microseconds_sum",
+                "value": 0
+            },
+            "http_request_duration_microseconds_sum{handler=prometheus}": {
+                "handler": "prometheus",
+                "key": "http_request_duration_microseconds_sum",
+                "value": 8.652291836000003e+06
+            },
+            "http_request_duration_microseconds_sum{handler=query_range}": {
+                "handler": "query_range",
+                "key": "http_request_duration_microseconds_sum",
+                "value": 0
+            },
+            "http_request_duration_microseconds_sum{handler=query}": {
+                "handler": "query",
+                "key": "http_request_duration_microseconds_sum",
+                "value": 0
+            },
+            "http_request_duration_microseconds_sum{handler=rules}": {
+                "handler": "rules",
+                "key": "http_request_duration_microseconds_sum",
+                "value": 0
+            },
+            "http_request_duration_microseconds_sum{handler=series}": {
+                "handler": "series",
+                "key": "http_request_duration_microseconds_sum",
+                "value": 0
+            },
+            "http_request_duration_microseconds_sum{handler=static}": {
+                "handler": "static",
+                "key": "http_request_duration_microseconds_sum",
+                "value": 2395.295
+            },
+            "http_request_duration_microseconds_sum{handler=status}": {
+                "handler": "status",
+                "key": "http_request_duration_microseconds_sum",
+                "value": 0
+            },
+            "http_request_duration_microseconds_sum{handler=targets}": {
+                "handler": "targets",
+                "key": "http_request_duration_microseconds_sum",
+                "value": 0
+            },
+            "http_request_duration_microseconds_sum{handler=version}": {
+                "handler": "version",
+                "key": "http_request_duration_microseconds_sum",
+                "value": 0
+            },
+            "http_request_duration_microseconds{handler=prometheus,quantile=0.5}": {
+                "handler": "prometheus",
+                "key": "http_request_duration_microseconds",
+                "quantile": 0.5,
+                "value": 3842.587
+            },
+            "http_request_duration_microseconds{handler=prometheus,quantile=0.99}": {
+                "handler": "prometheus",
+                "key": "http_request_duration_microseconds",
+                "quantile": 0.99,
+                "value": 9932.945
+            },
+            "http_request_duration_microseconds{handler=prometheus,quantile=0.9}": {
+                "handler": "prometheus",
+                "key": "http_request_duration_microseconds",
+                "quantile": 0.9,
+                "value": 6533.157
+            },
+            "http_request_size_bytes_count{handler=alerts}": {
+                "handler": "alerts",
+                "key": "http_request_size_bytes_count",
+                "value": 0
+            },
+            "http_request_size_bytes_count{handler=config}": {
+                "handler": "config",
+                "key": "http_request_size_bytes_count",
+                "value": 0
+            },
+            "http_request_size_bytes_count{handler=consoles}": {
+                "handler": "consoles",
+                "key": "http_request_size_bytes_count",
+                "value": 0
+            },
+            "http_request_size_bytes_count{handler=drop_series}": {
+                "handler": "drop_series",
+                "key": "http_request_size_bytes_count",
+                "value": 0
+            },
+            "http_request_size_bytes_count{handler=federate}": {
+                "handler": "federate",
+                "key": "http_request_size_bytes_count",
+                "value": 0
+            },
+            "http_request_size_bytes_count{handler=flags}": {
+                "handler": "flags",
+                "key": "http_request_size_bytes_count",
+                "value": 0
+            },
+            "http_request_size_bytes_count{handler=graph}": {
+                "handler": "graph",
+                "key": "http_request_size_bytes_count",
+                "value": 4
+            },
+            "http_request_size_bytes_count{handler=heap}": {
+                "handler": "heap",
+                "key": "http_request_size_bytes_count",
+                "value": 0
+            },
+            "http_request_size_bytes_count{handler=label_values}": {
+                "handler": "label_values",
+                "key": "http_request_size_bytes_count",
+                "value": 4
+            },
+            "http_request_size_bytes_count{handler=options}": {
+                "handler": "options",
+                "key": "http_request_size_bytes_count",
+                "value": 0
+            },
+            "http_request_size_bytes_count{handler=prometheus}": {
+                "handler": "prometheus",
+                "key": "http_request_size_bytes_count",
+                "value": 2557
+            },
+            "http_request_size_bytes_count{handler=query_range}": {
+                "handler": "query_range",
+                "key": "http_request_size_bytes_count",
+                "value": 0
+            },
+            "http_request_size_bytes_count{handler=query}": {
+                "handler": "query",
+                "key": "http_request_size_bytes_count",
+                "value": 0
+            },
+            "http_request_size_bytes_count{handler=rules}": {
+                "handler": "rules",
+                "key": "http_request_size_bytes_count",
+                "value": 0
+            },
+            "http_request_size_bytes_count{handler=series}": {
+                "handler": "series",
+                "key": "http_request_size_bytes_count",
+                "value": 0
+            },
+            "http_request_size_bytes_count{handler=static}": {
+                "handler": "static",
+                "key": "http_request_size_bytes_count",
+                "value": 4
+            },
+            "http_request_size_bytes_count{handler=status}": {
+                "handler": "status",
+                "key": "http_request_size_bytes_count",
+                "value": 0
+            },
+            "http_request_size_bytes_count{handler=targets}": {
+                "handler": "targets",
+                "key": "http_request_size_bytes_count",
+                "value": 0
+            },
+            "http_request_size_bytes_count{handler=version}": {
+                "handler": "version",
+                "key": "http_request_size_bytes_count",
+                "value": 0
+            },
+            "http_request_size_bytes_sum{handler=alerts}": {
+                "handler": "alerts",
+                "key": "http_request_size_bytes_sum",
+                "value": 0
+            },
+            "http_request_size_bytes_sum{handler=config}": {
+                "handler": "config",
+                "key": "http_request_size_bytes_sum",
+                "value": 0
+            },
+            "http_request_size_bytes_sum{handler=consoles}": {
+                "handler": "consoles",
+                "key": "http_request_size_bytes_sum",
+                "value": 0
+            },
+            "http_request_size_bytes_sum{handler=drop_series}": {
+                "handler": "drop_series",
+                "key": "http_request_size_bytes_sum",
+                "value": 0
+            },
+            "http_request_size_bytes_sum{handler=federate}": {
+                "handler": "federate",
+                "key": "http_request_size_bytes_sum",
+                "value": 0
+            },
+            "http_request_size_bytes_sum{handler=flags}": {
+                "handler": "flags",
+                "key": "http_request_size_bytes_sum",
+                "value": 0
+            },
+            "http_request_size_bytes_sum{handler=graph}": {
+                "handler": "graph",
+                "key": "http_request_size_bytes_sum",
+                "value": 3483
+            },
+            "http_request_size_bytes_sum{handler=heap}": {
+                "handler": "heap",
+                "key": "http_request_size_bytes_sum",
+                "value": 0
+            },
+            "http_request_size_bytes_sum{handler=label_values}": {
+                "handler": "label_values",
+                "key": "http_request_size_bytes_sum",
+                "value": 3679
+            },
+            "http_request_size_bytes_sum{handler=options}": {
+                "handler": "options",
+                "key": "http_request_size_bytes_sum",
+                "value": 0
+            },
+            "http_request_size_bytes_sum{handler=prometheus}": {
+                "handler": "prometheus",
+                "key": "http_request_size_bytes_sum",
+                "value": 607592
+            },
+            "http_request_size_bytes_sum{handler=query_range}": {
+                "handler": "query_range",
+                "key": "http_request_size_bytes_sum",
+                "value": 0
+            },
+            "http_request_size_bytes_sum{handler=query}": {
+                "handler": "query",
+                "key": "http_request_size_bytes_sum",
+                "value": 0
+            },
+            "http_request_size_bytes_sum{handler=rules}": {
+                "handler": "rules",
+                "key": "http_request_size_bytes_sum",
+                "value": 0
+            },
+            "http_request_size_bytes_sum{handler=series}": {
+                "handler": "series",
+                "key": "http_request_size_bytes_sum",
+                "value": 0
+            },
+            "http_request_size_bytes_sum{handler=static}": {
+                "handler": "static",
+                "key": "http_request_size_bytes_sum",
+                "value": 3531
+            },
+            "http_request_size_bytes_sum{handler=status}": {
+                "handler": "status",
+                "key": "http_request_size_bytes_sum",
+                "value": 0
+            },
+            "http_request_size_bytes_sum{handler=targets}": {
+                "handler": "targets",
+                "key": "http_request_size_bytes_sum",
+                "value": 0
+            },
+            "http_request_size_bytes_sum{handler=version}": {
+                "handler": "version",
+                "key": "http_request_size_bytes_sum",
+                "value": 0
+            },
+            "http_request_size_bytes{handler=prometheus,quantile=0.5}": {
+                "handler": "prometheus",
+                "key": "http_request_size_bytes",
+                "quantile": 0.5,
+                "value": 238
+            },
+            "http_request_size_bytes{handler=prometheus,quantile=0.99}": {
+                "handler": "prometheus",
+                "key": "http_request_size_bytes",
+                "quantile": 0.99,
+                "value": 238
+            },
+            "http_request_size_bytes{handler=prometheus,quantile=0.9}": {
+                "handler": "prometheus",
+                "key": "http_request_size_bytes",
+                "quantile": 0.9,
+                "value": 238
+            },
+            "http_requests_total{code=200,handler=graph,method=get}": {
+                "code": 200,
+                "handler": "graph",
+                "key": "http_requests_total",
+                "method": "get",
+                "value": 4
+            },
+            "http_requests_total{code=200,handler=label_values,method=get}": {
+                "code": 200,
+                "handler": "label_values",
+                "key": "http_requests_total",
+                "method": "get",
+                "value": 4
+            },
+            "http_requests_total{code=200,handler=prometheus,method=get}": {
+                "code": 200,
+                "handler": "prometheus",
+                "key": "http_requests_total",
+                "method": "get",
+                "value": 2557
+            },
+            "http_requests_total{code=200,handler=static,method=get}": {
+                "code": 200,
+                "handler": "static",
+                "key": "http_requests_total",
+                "method": "get",
+                "value": 4
+            },
+            "http_response_size_bytes_count{handler=alerts}": {
+                "handler": "alerts",
+                "key": "http_response_size_bytes_count",
+                "value": 0
+            },
+            "http_response_size_bytes_count{handler=config}": {
+                "handler": "config",
+                "key": "http_response_size_bytes_count",
+                "value": 0
+            },
+            "http_response_size_bytes_count{handler=consoles}": {
+                "handler": "consoles",
+                "key": "http_response_size_bytes_count",
+                "value": 0
+            },
+            "http_response_size_bytes_count{handler=drop_series}": {
+                "handler": "drop_series",
+                "key": "http_response_size_bytes_count",
+                "value": 0
+            },
+            "http_response_size_bytes_count{handler=federate}": {
+                "handler": "federate",
+                "key": "http_response_size_bytes_count",
+                "value": 0
+            },
+            "http_response_size_bytes_count{handler=flags}": {
+                "handler": "flags",
+                "key": "http_response_size_bytes_count",
+                "value": 0
+            },
+            "http_response_size_bytes_count{handler=graph}": {
+                "handler": "graph",
+                "key": "http_response_size_bytes_count",
+                "value": 4
+            },
+            "http_response_size_bytes_count{handler=heap}": {
+                "handler": "heap",
+                "key": "http_response_size_bytes_count",
+                "value": 0
+            },
+            "http_response_size_bytes_count{handler=label_values}": {
+                "handler": "label_values",
+                "key": "http_response_size_bytes_count",
+                "value": 4
+            },
+            "http_response_size_bytes_count{handler=options}": {
+                "handler": "options",
+                "key": "http_response_size_bytes_count",
+                "value": 0
+            },
+            "http_response_size_bytes_count{handler=prometheus}": {
+                "handler": "prometheus",
+                "key": "http_response_size_bytes_count",
+                "value": 2557
+            },
+            "http_response_size_bytes_count{handler=query_range}": {
+                "handler": "query_range",
+                "key": "http_response_size_bytes_count",
+                "value": 0
+            },
+            "http_response_size_bytes_count{handler=query}": {
+                "handler": "query",
+                "key": "http_response_size_bytes_count",
+                "value": 0
+            },
+            "http_response_size_bytes_count{handler=rules}": {
+                "handler": "rules",
+                "key": "http_response_size_bytes_count",
+                "value": 0
+            },
+            "http_response_size_bytes_count{handler=series}": {
+                "handler": "series",
+                "key": "http_response_size_bytes_count",
+                "value": 0
+            },
+            "http_response_size_bytes_count{handler=static}": {
+                "handler": "static",
+                "key": "http_response_size_bytes_count",
+                "value": 4
+            },
+            "http_response_size_bytes_count{handler=status}": {
+                "handler": "status",
+                "key": "http_response_size_bytes_count",
+                "value": 0
+            },
+            "http_response_size_bytes_count{handler=targets}": {
+                "handler": "targets",
+                "key": "http_response_size_bytes_count",
+                "value": 0
+            },
+            "http_response_size_bytes_count{handler=version}": {
+                "handler": "version",
+                "key": "http_response_size_bytes_count",
+                "value": 0
+            },
+            "http_response_size_bytes_sum{handler=alerts}": {
+                "handler": "alerts",
+                "key": "http_response_size_bytes_sum",
+                "value": 0
+            },
+            "http_response_size_bytes_sum{handler=config}": {
+                "handler": "config",
+                "key": "http_response_size_bytes_sum",
+                "value": 0
+            },
+            "http_response_size_bytes_sum{handler=consoles}": {
+                "handler": "consoles",
+                "key": "http_response_size_bytes_sum",
+                "value": 0
+            },
+            "http_response_size_bytes_sum{handler=drop_series}": {
+                "handler": "drop_series",
+                "key": "http_response_size_bytes_sum",
+                "value": 0
+            },
+            "http_response_size_bytes_sum{handler=federate}": {
+                "handler": "federate",
+                "key": "http_response_size_bytes_sum",
+                "value": 0
+            },
+            "http_response_size_bytes_sum{handler=flags}": {
+                "handler": "flags",
+                "key": "http_response_size_bytes_sum",
+                "value": 0
+            },
+            "http_response_size_bytes_sum{handler=graph}": {
+                "handler": "graph",
+                "key": "http_response_size_bytes_sum",
+                "value": 14476
+            },
+            "http_response_size_bytes_sum{handler=heap}": {
+                "handler": "heap",
+                "key": "http_response_size_bytes_sum",
+                "value": 0
+            },
+            "http_response_size_bytes_sum{handler=label_values}": {
+                "handler": "label_values",
+                "key": "http_response_size_bytes_sum",
+                "value": 3600
+            },
+            "http_response_size_bytes_sum{handler=options}": {
+                "handler": "options",
+                "key": "http_response_size_bytes_sum",
+                "value": 0
+            },
+            "http_response_size_bytes_sum{handler=prometheus}": {
+                "handler": "prometheus",
+                "key": "http_response_size_bytes_sum",
+                "value": 1.1343707e+07
+            },
+            "http_response_size_bytes_sum{handler=query_range}": {
+                "handler": "query_range",
+                "key": "http_response_size_bytes_sum",
+                "value": 0
+            },
+            "http_response_size_bytes_sum{handler=query}": {
+                "handler": "query",
+                "key": "http_response_size_bytes_sum",
+                "value": 0
+            },
+            "http_response_size_bytes_sum{handler=rules}": {
+                "handler": "rules",
+                "key": "http_response_size_bytes_sum",
+                "value": 0
+            },
+            "http_response_size_bytes_sum{handler=series}": {
+                "handler": "series",
+                "key": "http_response_size_bytes_sum",
+                "value": 0
+            },
+            "http_response_size_bytes_sum{handler=static}": {
+                "handler": "static",
+                "key": "http_response_size_bytes_sum",
+                "value": 25264
+            },
+            "http_response_size_bytes_sum{handler=status}": {
+                "handler": "status",
+                "key": "http_response_size_bytes_sum",
+                "value": 0
+            },
+            "http_response_size_bytes_sum{handler=targets}": {
+                "handler": "targets",
+                "key": "http_response_size_bytes_sum",
+                "value": 0
+            },
+            "http_response_size_bytes_sum{handler=version}": {
+                "handler": "version",
+                "key": "http_response_size_bytes_sum",
+                "value": 0
+            },
+            "http_response_size_bytes{handler=prometheus,quantile=0.5}": {
+                "handler": "prometheus",
+                "key": "http_response_size_bytes",
+                "quantile": 0.5,
+                "value": 4429
+            },
+            "http_response_size_bytes{handler=prometheus,quantile=0.99}": {
+                "handler": "prometheus",
+                "key": "http_response_size_bytes",
+                "quantile": 0.99,
+                "value": 5516
+            },
+            "http_response_size_bytes{handler=prometheus,quantile=0.9}": {
+                "handler": "prometheus",
+                "key": "http_response_size_bytes",
+                "quantile": 0.9,
+                "value": 4440
+            },
+            "process_cpu_seconds_total": {
+                "key": "process_cpu_seconds_total",
+                "value": 90.29
+            },
+            "process_max_fds": {
+                "key": "process_max_fds",
+                "value": 1.048576e+06
+            },
+            "process_open_fds": {
+                "key": "process_open_fds",
+                "value": 24
+            },
+            "process_resident_memory_bytes": {
+                "key": "process_resident_memory_bytes",
+                "value": 5.7675776e+07
+            },
+            "process_start_time_seconds": {
+                "key": "process_start_time_seconds",
+                "value": 1.48182274261e+09
+            },
+            "process_virtual_memory_bytes": {
+                "key": "process_virtual_memory_bytes",
+                "value": 9.8480128e+07
+            },
+            "prometheus_build_info{branch=master,goversion=go1.7.3,revision=2a89e8733f240d3cd57a6520b52c36ac4744ce12,version=1.4.1}": {
+                "branch": "master",
+                "goversion": "go1.7.3",
+                "key": "prometheus_build_info",
+                "revision": "2a89e8733f240d3cd57a6520b52c36ac4744ce12",
+                "value": 1,
+                "version": "1.4.1"
+            },
+            "prometheus_config_last_reload_success_timestamp_seconds": {
+                "key": "prometheus_config_last_reload_success_timestamp_seconds",
+                "value": 1.481817731e+09
+            },
+            "prometheus_config_last_reload_successful": {
+                "key": "prometheus_config_last_reload_successful",
+                "value": 1
+            },
+            "prometheus_evaluator_duration_seconds_count": {
+                "key": "prometheus_evaluator_duration_seconds_count",
+                "value": 2533
+            },
+            "prometheus_evaluator_duration_seconds_sum": {
+                "key": "prometheus_evaluator_duration_seconds_sum",
+                "value": 0.04064478199999991
+            },
+            "prometheus_evaluator_duration_seconds{quantile=0.01}": {
+                "key": "prometheus_evaluator_duration_seconds",
+                "quantile": 0.01,
+                "value": 8.694e-06
+            },
+            "prometheus_evaluator_duration_seconds{quantile=0.05}": {
+                "key": "prometheus_evaluator_duration_seconds",
+                "quantile": 0.05,
+                "value": 8.694e-06
+            },
+            "prometheus_evaluator_duration_seconds{quantile=0.5}": {
+                "key": "prometheus_evaluator_duration_seconds",
+                "quantile": 0.5,
+                "value": 1.4690000000000002e-05
+            },
+            "prometheus_evaluator_duration_seconds{quantile=0.99}": {
+                "key": "prometheus_evaluator_duration_seconds",
+                "quantile": 0.99,
+                "value": 7.7148e-05
+            },
+            "prometheus_evaluator_duration_seconds{quantile=0.9}": {
+                "key": "prometheus_evaluator_duration_seconds",
+                "quantile": 0.9,
+                "value": 5.2764000000000005e-05
+            },
+            "prometheus_evaluator_iterations_skipped_total": {
+                "key": "prometheus_evaluator_iterations_skipped_total",
+                "value": 0
+            },
+            "prometheus_local_storage_checkpoint_duration_seconds": {
+                "key": "prometheus_local_storage_checkpoint_duration_seconds",
+                "value": 0.059307467
+            },
+            "prometheus_local_storage_chunk_ops_total{type=create}": {
+                "key": "prometheus_local_storage_chunk_ops_total",
+                "type": "create",
+                "value": 7858
+            },
+            "prometheus_local_storage_chunk_ops_total{type=persist}": {
+                "key": "prometheus_local_storage_chunk_ops_total",
+                "type": "persist",
+                "value": 6893
+            },
+            "prometheus_local_storage_chunk_ops_total{type=transcode}": {
+                "key": "prometheus_local_storage_chunk_ops_total",
+                "type": "transcode",
+                "value": 7422
+            },
+            "prometheus_local_storage_chunks_to_persist": {
+                "key": "prometheus_local_storage_chunks_to_persist",
+                "value": 496
+            },
+            "prometheus_local_storage_fingerprint_mappings_total": {
+                "key": "prometheus_local_storage_fingerprint_mappings_total",
+                "value": 0
+            },
+            "prometheus_local_storage_inconsistencies_total": {
+                "key": "prometheus_local_storage_inconsistencies_total",
+                "value": 0
+            },
+            "prometheus_local_storage_indexing_batch_duration_seconds_count": {
+                "key": "prometheus_local_storage_indexing_batch_duration_seconds_count",
+                "value": 4
+            },
+            "prometheus_local_storage_indexing_batch_duration_seconds_sum": {
+                "key": "prometheus_local_storage_indexing_batch_duration_seconds_sum",
+                "value": 0.002404371
+            },
+            "prometheus_local_storage_indexing_batch_sizes_count": {
+                "key": "prometheus_local_storage_indexing_batch_sizes_count",
+                "value": 4
+            },
+            "prometheus_local_storage_indexing_batch_sizes_sum": {
+                "key": "prometheus_local_storage_indexing_batch_sizes_sum",
+                "value": 469
+            },
+            "prometheus_local_storage_indexing_queue_capacity": {
+                "key": "prometheus_local_storage_indexing_queue_capacity",
+                "value": 16384
+            },
+            "prometheus_local_storage_indexing_queue_length": {
+                "key": "prometheus_local_storage_indexing_queue_length",
+                "value": 0
+            },
+            "prometheus_local_storage_ingested_samples_total": {
+                "key": "prometheus_local_storage_ingested_samples_total",
+                "value": 1.1881e+06
+            },
+            "prometheus_local_storage_maintain_series_duration_seconds_count{location=archived}": {
+                "key": "prometheus_local_storage_maintain_series_duration_seconds_count",
+                "location": "archived",
+                "value": 0
+            },
+            "prometheus_local_storage_maintain_series_duration_seconds_count{location=memory}": {
+                "key": "prometheus_local_storage_maintain_series_duration_seconds_count",
+                "location": "memory",
+                "value": 3789
+            },
+            "prometheus_local_storage_maintain_series_duration_seconds_sum{location=archived}": {
+                "key": "prometheus_local_storage_maintain_series_duration_seconds_sum",
+                "location": "archived",
+                "value": 0
+            },
+            "prometheus_local_storage_maintain_series_duration_seconds_sum{location=memory}": {
+                "key": "prometheus_local_storage_maintain_series_duration_seconds_sum",
+                "location": "memory",
+                "value": 94.14759745500018
+            },
+            "prometheus_local_storage_maintain_series_duration_seconds{location=memory,quantile=0.5}": {
+                "key": "prometheus_local_storage_maintain_series_duration_seconds",
+                "location": "memory",
+                "quantile": 0.5,
+                "value": 0.029210735
+            },
+            "prometheus_local_storage_maintain_series_duration_seconds{location=memory,quantile=0.99}": {
+                "key": "prometheus_local_storage_maintain_series_duration_seconds",
+                "location": "memory",
+                "quantile": 0.99,
+                "value": 0.042432143000000005
+            },
+            "prometheus_local_storage_maintain_series_duration_seconds{location=memory,quantile=0.9}": {
+                "key": "prometheus_local_storage_maintain_series_duration_seconds",
+                "location": "memory",
+                "quantile": 0.9,
+                "value": 0.034449472
+            },
+            "prometheus_local_storage_max_chunks_to_persist": {
+                "key": "prometheus_local_storage_max_chunks_to_persist",
+                "value": 524288
+            },
+            "prometheus_local_storage_memory_chunkdescs": {
+                "key": "prometheus_local_storage_memory_chunkdescs",
+                "value": 7858
+            },
+            "prometheus_local_storage_memory_chunks": {
+                "key": "prometheus_local_storage_memory_chunks",
+                "value": 7858
+            },
+            "prometheus_local_storage_memory_series": {
+                "key": "prometheus_local_storage_memory_series",
+                "value": 469
+            },
+            "prometheus_local_storage_non_existent_series_matches_total": {
+                "key": "prometheus_local_storage_non_existent_series_matches_total",
+                "value": 0
+            },
+            "prometheus_local_storage_out_of_order_samples_total{reason=multiple_values_for_timestamp}": {
+                "key": "prometheus_local_storage_out_of_order_samples_total",
+                "reason": "multiple_values_for_timestamp",
+                "value": 0
+            },
+            "prometheus_local_storage_out_of_order_samples_total{reason=timestamp_out_of_order}": {
+                "key": "prometheus_local_storage_out_of_order_samples_total",
+                "reason": "timestamp_out_of_order",
+                "value": 0
+            },
+            "prometheus_local_storage_persist_errors_total": {
+                "key": "prometheus_local_storage_persist_errors_total",
+                "value": 0
+            },
+            "prometheus_local_storage_persistence_urgency_score": {
+                "key": "prometheus_local_storage_persistence_urgency_score",
+                "value": 0.000949859619140625
+            },
+            "prometheus_local_storage_rushed_mode": {
+                "key": "prometheus_local_storage_rushed_mode",
+                "value": 0
+            },
+            "prometheus_local_storage_series_ops_total{type=archive}": {
+                "key": "prometheus_local_storage_series_ops_total",
+                "type": "archive",
+                "value": 0
+            },
+            "prometheus_local_storage_series_ops_total{type=create}": {
+                "key": "prometheus_local_storage_series_ops_total",
+                "type": "create",
+                "value": 469
+            },
+            "prometheus_local_storage_series_ops_total{type=maintenance_in_archive}": {
+                "key": "prometheus_local_storage_series_ops_total",
+                "type": "maintenance_in_archive",
+                "value": 0
+            },
+            "prometheus_local_storage_series_ops_total{type=maintenance_in_memory}": {
+                "key": "prometheus_local_storage_series_ops_total",
+                "type": "maintenance_in_memory",
+                "value": 3789
+            },
+            "prometheus_local_storage_series_ops_total{type=purge_from_archive}": {
+                "key": "prometheus_local_storage_series_ops_total",
+                "type": "purge_from_archive",
+                "value": 0
+            },
+            "prometheus_local_storage_series_ops_total{type=purge_from_memory}": {
+                "key": "prometheus_local_storage_series_ops_total",
+                "type": "purge_from_memory",
+                "value": 0
+            },
+            "prometheus_local_storage_series_ops_total{type=purge_on_request}": {
+                "key": "prometheus_local_storage_series_ops_total",
+                "type": "purge_on_request",
+                "value": 0
+            },
+            "prometheus_local_storage_series_ops_total{type=quarantine_completed}": {
+                "key": "prometheus_local_storage_series_ops_total",
+                "type": "quarantine_completed",
+                "value": 0
+            },
+            "prometheus_local_storage_series_ops_total{type=quarantine_dropped}": {
+                "key": "prometheus_local_storage_series_ops_total",
+                "type": "quarantine_dropped",
+                "value": 0
+            },
+            "prometheus_local_storage_series_ops_total{type=quarantine_failed}": {
+                "key": "prometheus_local_storage_series_ops_total",
+                "type": "quarantine_failed",
+                "value": 0
+            },
+            "prometheus_local_storage_series_ops_total{type=unarchive}": {
+                "key": "prometheus_local_storage_series_ops_total",
+                "type": "unarchive",
+                "value": 0
+            },
+            "prometheus_local_storage_started_dirty": {
+                "key": "prometheus_local_storage_started_dirty",
+                "value": 0
+            },
+            "prometheus_notifications_dropped_total": {
+                "key": "prometheus_notifications_dropped_total",
+                "value": 0
+            },
+            "prometheus_notifications_queue_capacity": {
+                "key": "prometheus_notifications_queue_capacity",
+                "value": 10000
+            },
+            "prometheus_notifications_queue_length": {
+                "key": "prometheus_notifications_queue_length",
+                "value": 0
+            },
+            "prometheus_rule_evaluation_failures_total{rule_type=alerting}": {
+                "key": "prometheus_rule_evaluation_failures_total",
+                "rule_type": "alerting",
+                "value": 0
+            },
+            "prometheus_rule_evaluation_failures_total{rule_type=recording}": {
+                "key": "prometheus_rule_evaluation_failures_total",
+                "rule_type": "recording",
+                "value": 0
+            },
+            "prometheus_sd_azure_refresh_duration_seconds_count": {
+                "key": "prometheus_sd_azure_refresh_duration_seconds_count",
+                "value": 0
+            },
+            "prometheus_sd_azure_refresh_duration_seconds_sum": {
+                "key": "prometheus_sd_azure_refresh_duration_seconds_sum",
+                "value": 0
+            },
+            "prometheus_sd_azure_refresh_failures_total": {
+                "key": "prometheus_sd_azure_refresh_failures_total",
+                "value": 0
+            },
+            "prometheus_sd_consul_rpc_duration_seconds_count{call=service,endpoint=catalog}": {
+                "call": "service",
+                "endpoint": "catalog",
+                "key": "prometheus_sd_consul_rpc_duration_seconds_count",
+                "value": 0
+            },
+            "prometheus_sd_consul_rpc_duration_seconds_count{call=services,endpoint=catalog}": {
+                "call": "services",
+                "endpoint": "catalog",
+                "key": "prometheus_sd_consul_rpc_duration_seconds_count",
+                "value": 0
+            },
+            "prometheus_sd_consul_rpc_duration_seconds_sum{call=service,endpoint=catalog}": {
+                "call": "service",
+                "endpoint": "catalog",
+                "key": "prometheus_sd_consul_rpc_duration_seconds_sum",
+                "value": 0
+            },
+            "prometheus_sd_consul_rpc_duration_seconds_sum{call=services,endpoint=catalog}": {
+                "call": "services",
+                "endpoint": "catalog",
+                "key": "prometheus_sd_consul_rpc_duration_seconds_sum",
+                "value": 0
+            },
+            "prometheus_sd_consul_rpc_failures_total": {
+                "key": "prometheus_sd_consul_rpc_failures_total",
+                "value": 0
+            },
+            "prometheus_sd_dns_lookup_failures_total": {
+                "key": "prometheus_sd_dns_lookup_failures_total",
+                "value": 0
+            },
+            "prometheus_sd_dns_lookups_total": {
+                "key": "prometheus_sd_dns_lookups_total",
+                "value": 0
+            },
+            "prometheus_sd_ec2_refresh_duration_seconds_count": {
+                "key": "prometheus_sd_ec2_refresh_duration_seconds_count",
+                "value": 0
+            },
+            "prometheus_sd_ec2_refresh_duration_seconds_sum": {
+                "key": "prometheus_sd_ec2_refresh_duration_seconds_sum",
+                "value": 0
+            },
+            "prometheus_sd_ec2_refresh_failures_total": {
+                "key": "prometheus_sd_ec2_refresh_failures_total",
+                "value": 0
+            },
+            "prometheus_sd_file_read_errors_total": {
+                "key": "prometheus_sd_file_read_errors_total",
+                "value": 0
+            },
+            "prometheus_sd_file_scan_duration_seconds_count": {
+                "key": "prometheus_sd_file_scan_duration_seconds_count",
+                "value": 0
+            },
+            "prometheus_sd_file_scan_duration_seconds_sum": {
+                "key": "prometheus_sd_file_scan_duration_seconds_sum",
+                "value": 0
+            },
+            "prometheus_sd_gce_refresh_duration_count": {
+                "key": "prometheus_sd_gce_refresh_duration_count",
+                "value": 0
+            },
+            "prometheus_sd_gce_refresh_duration_sum": {
+                "key": "prometheus_sd_gce_refresh_duration_sum",
+                "value": 0
+            },
+            "prometheus_sd_gce_refresh_failures_total": {
+                "key": "prometheus_sd_gce_refresh_failures_total",
+                "value": 0
+            },
+            "prometheus_sd_kubernetes_events_total{event=add,role=endpoints}": {
+                "event": "add",
+                "key": "prometheus_sd_kubernetes_events_total",
+                "role": "endpoints",
+                "value": 0
+            },
+            "prometheus_sd_kubernetes_events_total{event=add,role=node}": {
+                "event": "add",
+                "key": "prometheus_sd_kubernetes_events_total",
+                "role": "node",
+                "value": 0
+            },
+            "prometheus_sd_kubernetes_events_total{event=add,role=pod}": {
+                "event": "add",
+                "key": "prometheus_sd_kubernetes_events_total",
+                "role": "pod",
+                "value": 0
+            },
+            "prometheus_sd_kubernetes_events_total{event=add,role=service}": {
+                "event": "add",
+                "key": "prometheus_sd_kubernetes_events_total",
+                "role": "service",
+                "value": 0
+            },
+            "prometheus_sd_kubernetes_events_total{event=delete,role=endpoints}": {
+                "event": "delete",
+                "key": "prometheus_sd_kubernetes_events_total",
+                "role": "endpoints",
+                "value": 0
+            },
+            "prometheus_sd_kubernetes_events_total{event=delete,role=node}": {
+                "event": "delete",
+                "key": "prometheus_sd_kubernetes_events_total",
+                "role": "node",
+                "value": 0
+            },
+            "prometheus_sd_kubernetes_events_total{event=delete,role=pod}": {
+                "event": "delete",
+                "key": "prometheus_sd_kubernetes_events_total",
+                "role": "pod",
+                "value": 0
+            },
+            "prometheus_sd_kubernetes_events_total{event=delete,role=service}": {
+                "event": "delete",
+                "key": "prometheus_sd_kubernetes_events_total",
+                "role": "service",
+                "value": 0
+            },
+            "prometheus_sd_kubernetes_events_total{event=update,role=endpoints}": {
+                "event": "update",
+                "key": "prometheus_sd_kubernetes_events_total",
+                "role": "endpoints",
+                "value": 0
+            },
+            "prometheus_sd_kubernetes_events_total{event=update,role=node}": {
+                "event": "update",
+                "key": "prometheus_sd_kubernetes_events_total",
+                "role": "node",
+                "value": 0
+            },
+            "prometheus_sd_kubernetes_events_total{event=update,role=pod}": {
+                "event": "update",
+                "key": "prometheus_sd_kubernetes_events_total",
+                "role": "pod",
+                "value": 0
+            },
+            "prometheus_sd_kubernetes_events_total{event=update,role=service}": {
+                "event": "update",
+                "key": "prometheus_sd_kubernetes_events_total",
+                "role": "service",
+                "value": 0
+            },
+            "prometheus_sd_marathon_refresh_duration_seconds_count": {
+                "key": "prometheus_sd_marathon_refresh_duration_seconds_count",
+                "value": 0
+            },
+            "prometheus_sd_marathon_refresh_duration_seconds_sum": {
+                "key": "prometheus_sd_marathon_refresh_duration_seconds_sum",
+                "value": 0
+            },
+            "prometheus_sd_marathon_refresh_failures_total": {
+                "key": "prometheus_sd_marathon_refresh_failures_total",
+                "value": 0
+            },
+            "prometheus_target_interval_length_seconds_count{interval=15s}": {
+                "interval": "15s",
+                "key": "prometheus_target_interval_length_seconds_count",
+                "value": 2533
+            },
+            "prometheus_target_interval_length_seconds_sum{interval=15s}": {
+                "interval": "15s",
+                "key": "prometheus_target_interval_length_seconds_sum",
+                "value": 46382.43248095396
+            },
+            "prometheus_target_interval_length_seconds{interval=15s,quantile=0.01}": {
+                "interval": "15s",
+                "key": "prometheus_target_interval_length_seconds",
+                "quantile": 0.01,
+                "value": 14.996084549
+            },
+            "prometheus_target_interval_length_seconds{interval=15s,quantile=0.05}": {
+                "interval": "15s",
+                "key": "prometheus_target_interval_length_seconds",
+                "quantile": 0.05,
+                "value": 14.996084549
+            },
+            "prometheus_target_interval_length_seconds{interval=15s,quantile=0.5}": {
+                "interval": "15s",
+                "key": "prometheus_target_interval_length_seconds",
+                "quantile": 0.5,
+                "value": 15.000295585
+            },
+            "prometheus_target_interval_length_seconds{interval=15s,quantile=0.99}": {
+                "interval": "15s",
+                "key": "prometheus_target_interval_length_seconds",
+                "quantile": 0.99,
+                "value": 15.003584847
+            },
+            "prometheus_target_interval_length_seconds{interval=15s,quantile=0.9}": {
+                "interval": "15s",
+                "key": "prometheus_target_interval_length_seconds",
+                "quantile": 0.9,
+                "value": 15.002736325
+            },
+            "prometheus_target_scrape_pool_sync_total{scrape_job=prometheus}": {
+                "key": "prometheus_target_scrape_pool_sync_total",
+                "scrape_job": "prometheus",
+                "value": 1
+            },
+            "prometheus_target_sync_length_seconds_count{scrape_job=prometheus}": {
+                "key": "prometheus_target_sync_length_seconds_count",
+                "scrape_job": "prometheus",
+                "value": 1
+            },
+            "prometheus_target_sync_length_seconds_sum{scrape_job=prometheus}": {
+                "key": "prometheus_target_sync_length_seconds_sum",
+                "scrape_job": "prometheus",
+                "value": 7.599600000000001e-05
+            },
+            "prometheus_treecache_watcher_goroutines": {
+                "key": "prometheus_treecache_watcher_goroutines",
+                "value": 0
+            },
+            "prometheus_treecache_zookeeper_failures_total": {
+                "key": "prometheus_treecache_zookeeper_failures_total",
+                "value": 0
+            }
+        }
+    },
+    "type": "metricsets"
+}

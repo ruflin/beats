@@ -3972,6 +3972,21 @@ experimental[]
 
 
 [float]
+== collector Fields
+
+query
+
+
+
+[float]
+=== prometheus.collector.example
+
+type: keyword
+
+Example field
+
+
+[float]
 == stats Fields
 
 stats

@@ -2212,6 +2212,14 @@
         },
         "prometheus": {
           "properties": {
+            "collector": {
+              "properties": {
+                "example": {
+                  "ignore_above": 1024,
+                  "type": "keyword"
+                }
+              }
+            },
             "stats": {
               "properties": {
                 "notifications": {

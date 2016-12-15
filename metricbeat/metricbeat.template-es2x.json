@@ -2227,6 +2227,15 @@
         },
         "prometheus": {
           "properties": {
+            "collector": {
+              "properties": {
+                "example": {
+                  "ignore_above": 1024,
+                  "index": "not_analyzed",
+                  "type": "string"
+                }
+              }
+            },
             "stats": {
               "properties": {
                 "notifications": {
