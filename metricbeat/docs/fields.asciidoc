@@ -39,6 +39,7 @@ grouped in the following categories:
 * <<exported-fields-prometheus>>
 * <<exported-fields-redis>>
 * <<exported-fields-system>>
+* <<exported-fields-udp>>
 * <<exported-fields-vsphere>>
 * <<exported-fields-windows>>
 * <<exported-fields-zookeeper>>
@@ -11266,6 +11267,35 @@ UID of the user running the process.
 type: keyword
 
 Name of the user running the process.
+
+
+[[exported-fields-udp]]
+== udp Fields
+
+[]experimental
+udp Module
+
+
+
+[float]
+== udp Fields
+
+
+
+
+[float]
+== json Fields
+
+json
+
+
+
+[float]
+=== udp.json.example
+
+type: keyword
+
+Example field
 
 
 [[exported-fields-vsphere]]

@@ -1,0 +1,6 @@
+- module: udp
+  metricsets: ["json"]
+  enabled: false
+  period: 10s
+  hosts: ["localhost"]
+

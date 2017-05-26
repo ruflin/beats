@@ -1,0 +1,3 @@
+=== udp json MetricSet
+
+This is the json metricset of the module udp.
