@@ -20,11 +20,18 @@ metricbeat.config.modules:
   #reload.period: 10s
 
 #==================== Elasticsearch template setting ==========================
-
 setup.template.settings:
-  index.number_of_shards: 1
-  index.codec: best_compression
-  #_source.enabled: false
+
+
+  # A dictionary of settings to place into the settings.index dictionary
+  # of the Elasticsearch template. For more details, please check
+  # https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping.html
+  index:
+    number_of_shards: 1
+    codec: best_compression
+    sort.field: ["metricset.module", "metricset.name", "@timestamp"]
+    sort.order: ["asc", "asc", "desc"]
+
 
 #================================ General =====================================
 
