@@ -1,0 +1,41 @@
+filebeat.prospectors:
+- type: log
+  enabled: true
+  paths:
+    - /var/log/*.log
+
+heartbeat.monitors:
+- type: http
+  urls: ["http://localhost:9200"]
+  schedule: '@every 10s'
+
+metricbeat.modules:
+- module: system
+  metricsets:
+    - cpu             # CPU usage
+    - filesystem      # File system usage for each mountpoint
+    - fsstat          # File system summary metrics
+    - load            # CPU load averages
+    - memory          # Memory usage
+    - network         # Network IO
+    - process         # Per process metrics
+    - process_summary # Process summary
+    - uptime          # System Uptime
+  enabled: true
+  period: 10s
+  processes: ['.*']
+
+#auditbeat.modules:
+#- module: file_integrity
+#  paths:
+#  - /tmp/beats
+
+output.file:
+  # Boolean flag to enable or disable the output module.
+  enabled: true
+
+  # Path to the directory where to save the generated files. The option is
+  # mandatory.
+  path: "/tmp/beats"
+
+

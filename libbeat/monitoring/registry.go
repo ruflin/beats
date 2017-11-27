@@ -149,7 +149,8 @@ func (r *Registry) addNames(names []string, v Var, opts *options) error {
 	name := names[0]
 	if len(names) == 1 {
 		if _, found := r.entries[name]; found {
-			return fmt.Errorf("name %v already used", name)
+			return nil
+			//return fmt.Errorf("name %v already used", name)
 		}
 
 		r.entries[name] = entry{v, opts.mode}
@@ -159,7 +160,8 @@ func (r *Registry) addNames(names []string, v Var, opts *options) error {
 	if tmp, found := r.entries[name]; found {
 		reg, ok := tmp.Var.(*Registry)
 		if !ok {
-			return fmt.Errorf("name %v already used", name)
+			return nil
+			//return fmt.Errorf("name %v already used", name)
 		}
 
 		return reg.addNames(names[1:], v, opts)
@@ -237,6 +239,7 @@ func (r *Registry) removeNames(names []string) {
 
 func panicErr(err error) {
 	if err != nil {
-		panic(err)
+		fmt.Printf("PANIC: %s", err)
+		//panic(err)
 	}
 }

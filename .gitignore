@@ -8,6 +8,7 @@
 /*/fields.yml
 /*/*.template*.json
 **/html_docs
+/data
 
 # Files
 .DS_Store
@@ -18,6 +19,7 @@ coverage.out
 .python-version
 beat.db
 *.keystore
+beats
 
 # Editor swap files
 *.swp
