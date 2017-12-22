@@ -5,6 +5,8 @@ import (
 	"os"
 	"time"
 
+	"sync"
+
 	"github.com/elastic/beats/filebeat/harvester"
 	"github.com/elastic/beats/filebeat/input/file"
 	"github.com/elastic/beats/libbeat/logp"
@@ -12,6 +14,7 @@ import (
 
 // Log contains all log related data
 type Log struct {
+	closeMutex   sync.Mutex
 	fs           harvester.Source
 	offset       int64
 	config       LogConfig
@@ -100,9 +103,41 @@ func (f *Log) errorChecks(err error) error {
 		return err
 	}
 
+	// End of file reached
 	if err == io.EOF && f.config.CloseEOF {
 		return err
 	}
+
+	return f.closeChecks()
+}
+
+func (f *Log) wait() {
+	// Wait before trying to read file again. File reached EOF.
+	select {
+	case <-f.done:
+		return
+	case <-time.After(f.backoff):
+	}
+
+	// Increment backoff up to maxBackoff
+	if f.backoff < f.config.MaxBackoff {
+		f.backoff = f.backoff * time.Duration(f.config.BackoffFactor)
+		if f.backoff > f.config.MaxBackoff {
+			f.backoff = f.config.MaxBackoff
+		}
+	}
+}
+
+// Close closes the done channel but no th the file handler
+func (f *Log) Close() {
+	close(f.done)
+	// Note: File reader is not closed here because that leads to race conditions
+}
+
+func (f *Log) closeChecks() error {
+
+	f.closeMutex.Lock()
+	defer f.closeMutex.Unlock()
 
 	// Refetch fileinfo to check if the file was truncated or disappeared.
 	// Errors if the file was removed/rotated after reading and before
@@ -144,27 +179,4 @@ func (f *Log) errorChecks(err error) error {
 	}
 
 	return nil
-}
-
-func (f *Log) wait() {
-	// Wait before trying to read file again. File reached EOF.
-	select {
-	case <-f.done:
-		return
-	case <-time.After(f.backoff):
-	}
-
-	// Increment backoff up to maxBackoff
-	if f.backoff < f.config.MaxBackoff {
-		f.backoff = f.backoff * time.Duration(f.config.BackoffFactor)
-		if f.backoff > f.config.MaxBackoff {
-			f.backoff = f.config.MaxBackoff
-		}
-	}
-}
-
-// Close closes the done channel but no th the file handler
-func (f *Log) Close() {
-	close(f.done)
-	// Note: File reader is not closed here because that leads to race conditions
 }

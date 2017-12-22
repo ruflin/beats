@@ -195,18 +195,28 @@ func (h *Harvester) Run() error {
 	// This routine is also responsible to properly stop the reader
 	go func() {
 
-		closeTimeout := make(<-chan time.Time)
-		// starts close_timeout timer
+		tickerChan := make(<-chan time.Time)
+
 		if h.config.CloseTimeout > 0 {
-			closeTimeout = time.After(h.config.CloseTimeout)
+			ticker := time.NewTicker(h.config.CloseTimeout)
+			defer ticker.Stop()
+			tickerChan = ticker.C
 		}
 
-		select {
-		// Applies when timeout is reached
-		case <-closeTimeout:
-			logp.Info("Closing harvester because close_timeout was reached.")
-		// Required when reader loop returns and reader finished
-		case <-h.done:
+	OuterLoop:
+		for {
+			select {
+			// Applies when timeout is reached
+			case <-tickerChan:
+
+				if err := h.log.closeChecks(); err != nil {
+					logp.Info("Closing harvester because close_timeout was reached.")
+					break OuterLoop
+				}
+				// Required when reader loop returns and reader finished
+			case <-h.done:
+				break OuterLoop
+			}
 		}
 
 		h.stop()
