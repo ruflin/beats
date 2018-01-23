@@ -39,6 +39,7 @@ func init() {
 
 // Prospector contains the prospector and its config
 type Prospector struct {
+	numHarvesters atomic.Uint64
 	cfg           *common.Config
 	config        config
 	states        *file.States
@@ -46,7 +47,6 @@ type Prospector struct {
 	outlet        channel.Outleter
 	stateOutlet   channel.Outleter
 	done          chan struct{}
-	numHarvesters atomic.Uint64
 }
 
 // NewProspector instantiates a new Log
