@@ -1,0 +1,9 @@
+name: lamp
+description: LAMP stack assets
+beats: ["filebeat", "metricbeat"]
+modules: ["filebeat.apache", "metricbeat.system", "metricbeat.apache"]
+
+# Are dashboard ids required?
+dashboards:
+- id: Filebeat-Apache2-Dashboard
+  file: Filebeat-apache2.json
