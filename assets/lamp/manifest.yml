@@ -1,0 +1,19 @@
+# The manifest contains all information about the asset
+#
+# In case some assets are not versioned locally like ml jobs, the manifest contains
+# the necessary information on how these assets can be loaded.
+
+name: lamp
+description: LAMP stack assets
+beats: ["filebeat", "metricbeat"]
+modules: ["filebeat.apache", "metricbeat.system", "metricbeat.apache"]
+
+# Are dashboard ids required?
+kibana:
+  dashboards:
+  - id: Filebeat-Apache2-Dashboard
+    file: Filebeat-apache2.json
+  ml:
+    # See https://github.com/elastic/beats/pull/6604
+    name-of-file-to-be-loaded: name
+
