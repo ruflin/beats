@@ -26,6 +26,7 @@ import (
 
 	"github.com/elastic/beats/libbeat/beat"
 	"github.com/elastic/beats/libbeat/common"
+	"fmt"
 )
 
 func TestRenameRun(t *testing.T) {
@@ -337,6 +338,54 @@ func TestRenameField(t *testing.T) {
 			ignoreMissing: false,
 			error:         true,
 		},
+		{
+			description: "Complex use case",
+			From: "kubernetes.pod.name",
+			To: "metadata.container",
+			Input: common.MapStr{
+				"kubernetes": common.MapStr{
+					"labels": common.MapStr{
+						"env": "INT",
+						"pod-template-hash": "1184044087",
+						"service": "live-snapshot-service",
+					},
+					"container": common.MapStr{
+						"name": "live-snapshot-service",
+					},
+					"pod": common.MapStr{
+				"name":		"live-snapshot-service-55d84884dc-qkfhb",
+					},
+					"node": common.MapStr{
+						"name": "live-snapshot-service-55d84884dc-qkfhb",
+					},
+					"namespace": "int",
+				},
+			},
+			Output: common.MapStr{
+				"kubernetes": common.MapStr{
+					"labels": common.MapStr{
+						"env": "INT",
+						"pod-template-hash": "1184044087",
+						"service": "live-snapshot-service",
+					},
+					"container": common.MapStr{
+						"name": "live-snapshot-service",
+					},
+					"pod": common.MapStr{
+					},
+					"node": common.MapStr{
+						"name":		"live-snapshot-service-55d84884dc-qkfhb",
+					},
+					"namespace": "int",
+				},
+				"metadata": common.MapStr{
+					"container":  "live-snapshot-service-55d84884dc-qkfhb",
+				},
+			},
+			failOnError:   true,
+			ignoreMissing: false,
+			error: false,
+		},
 	}
 
 	for _, test := range tests {
@@ -351,8 +400,12 @@ func TestRenameField(t *testing.T) {
 
 			err := f.renameField(test.From, test.To, test.Input)
 			if err != nil {
+				fmt.Println(err)
 				assert.Equal(t, test.error, true)
 			}
+
+			fmt.Printf("%+v", test.Input)
+			fmt.Printf("%+v", test.Output)
 
 			assert.True(t, reflect.DeepEqual(test.Input, test.Output))
 		})
