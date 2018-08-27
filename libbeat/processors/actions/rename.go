@@ -72,6 +72,8 @@ func (f *renameFields) Run(event *beat.Event) (*beat.Event, error) {
 		backup = event.Fields.Clone()
 	}
 
+	logp.Debug("rename", "Before rename event fields: %+v", event.Fields)
+
 	for _, field := range f.config.Fields {
 		err := f.renameField(field.From, field.To, event.Fields)
 		if err != nil && f.config.FailOnError {
@@ -80,6 +82,8 @@ func (f *renameFields) Run(event *beat.Event) (*beat.Event, error) {
 			return event, err
 		}
 	}
+
+	logp.Debug("rename", "After rename event fields: %+v", event.Fields)
 
 	return event, nil
 }
@@ -97,7 +101,7 @@ func (f *renameFields) renameField(from string, to string, fields common.MapStr)
 		if f.config.IgnoreMissing && errors.Cause(err) == common.ErrKeyNotFound {
 			return nil
 		}
-		return fmt.Errorf("could not fetch value for key: %s, Error: %s", from, err)
+		return fmt.Errorf("could not fetch value for key: %s, Error: %s, Fields: %+v", from, err, fields)
 	}
 
 	// Deletion must happen first to support cases where a becomes a.b
