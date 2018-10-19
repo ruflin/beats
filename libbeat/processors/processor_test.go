@@ -281,7 +281,7 @@ func TestMultipleIncludeFields(t *testing.T) {
 			"include_fields": map[string]interface{}{
 				"when": map[string]interface{}{
 					"contains": map[string]string{
-						"beat.name": "my-shipper",
+						"agent.hostname": "my-shipper",
 					},
 				},
 				"fields": []string{"proc"},

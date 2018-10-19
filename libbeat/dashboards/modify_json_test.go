@@ -53,13 +53,13 @@ func TestReplaceStringInDashboard(t *testing.T) {
 		{
 			content: common.MapStr{
 				"kibanaSavedObjectMeta": map[string]interface{}{
-					"searchSourceJSON": "{\"filter\":[],\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"beat.name:\\\"CHANGEME_HOSTNAME\\\"\",\"language\":\"lucene\"}}"}},
+					"searchSourceJSON": "{\"filter\":[],\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"agent.hostname:\\\"CHANGEME_HOSTNAME\\\"\",\"language\":\"lucene\"}}"}},
 
 			old: "CHANGEME_HOSTNAME",
 			new: "hostname.local",
 			expected: common.MapStr{
 				"kibanaSavedObjectMeta": map[string]interface{}{
-					"searchSourceJSON": "{\"filter\":[],\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"beat.name:\\\"hostname.local\\\"\",\"language\":\"lucene\"}}"}},
+					"searchSourceJSON": "{\"filter\":[],\"highlightAll\":true,\"version\":true,\"query\":{\"query\":\"agent.hostname:\\\"hostname.local\\\"\",\"language\":\"lucene\"}}"}},
 		},
 	}
 

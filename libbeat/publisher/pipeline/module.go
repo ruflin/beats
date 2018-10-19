@@ -81,8 +81,8 @@ func Load(
 		Annotations: Annotations{
 			Event: config.EventMetadata,
 			Builtin: common.MapStr{
-				"beat": common.MapStr{
-					"name":     name,
+				"agent": common.MapStr{
+					"name":     beatInfo.Beat,
 					"hostname": beatInfo.Hostname,
 					"version":  beatInfo.Version,
 				},
